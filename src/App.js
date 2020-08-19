@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import Navbar from "./components/Navbar";
+import Routes from "./components/Routes";
 
 function App() {
+  const theme = {
+    black: "black",
+    yellow: "#bdac2d",
+    darkBlue: "#11586A",
+    lightBlue: "#82B3B7",
+    white: "#FFFFFF",
+    beige: "#EAE0CC",
+    pink: "#C9ADA1",
+    green: "#A0A083",
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Navbar />
+      <Routes />
+    </ThemeProvider>
   );
 }
 
