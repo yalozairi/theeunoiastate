@@ -31,13 +31,13 @@ const About = () => {
           great lifestyle.
         </p>
         <MoreButtonStyled>
-          <a>Tell Me More</a>
+          <a href="#more">Tell Me More</a>
         </MoreButtonStyled>
       </TitleWrapper>
       <BeachWrapper>
         <Beach src={beach} alt="Beach" />
       </BeachWrapper>
-      <VisionWrapper className="container-fluid">
+      <VisionWrapper id="more" className="container-fluid">
         <div className="row">
           <LeftVisionWrapper className="col-6 col-sm-12">
             <ChartStyled src={chart} alt="Chart"></ChartStyled>

@@ -43,11 +43,14 @@ export const MoreButtonStyled = styled.div`
     color: ${(props) => props.theme.white};
   }
   a {
+    color: ${(props) => props.theme.darkBlue};
     background-color: ${(props) => props.theme.white};
     border: 1px solid ${(props) => props.theme.darkBlue};
     border-radius: 100px;
     padding: 12px 15px;
     :hover {
+      text-decoration: none;
+      color: ${(props) => props.theme.white};
       background-color: ${(props) => props.theme.darkBlue};
       transition: ease 0.4s;
       cursor: pointer;
