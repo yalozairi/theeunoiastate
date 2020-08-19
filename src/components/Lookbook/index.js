@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { comingSoonWrapper } from "./styles";
+import { ComingSoonWrapper, ComingSoon, ImageWrapper, People } from "./styles";
+import people from "../../assets/0.png";
 
 const Lookbook = () => {
   return (
@@ -8,9 +9,12 @@ const Lookbook = () => {
       <Helmet>
         <title>Lookbook | The Eunoia State</title>
       </Helmet>
-      <comingSoonWrapper>
-        <h1>coming soon...</h1>
-      </comingSoonWrapper>
+      <ComingSoonWrapper>
+        <ComingSoon>coming soon...</ComingSoon>
+      </ComingSoonWrapper>
+      <ImageWrapper>
+        <People src={people} alt="People" />
+      </ImageWrapper>
     </div>
   );
 };

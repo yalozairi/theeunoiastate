@@ -2,10 +2,11 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import Navbar from "./components/Navbar";
 import Routes from "./components/Routes";
+import Footer from "./components/Footer";
 
 function App() {
   const theme = {
-    black: "black",
+    black: "#000000",
     yellow: "#bdac2d",
     darkBlue: "#11586A",
     lightBlue: "#82B3B7",
@@ -18,6 +19,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Navbar />
       <Routes />
+      <Footer />
     </ThemeProvider>
   );
 }

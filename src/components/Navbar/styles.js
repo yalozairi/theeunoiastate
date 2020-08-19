@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const NavBarLogo = styled.img`
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  margin-top: 65px;
   margin-bottom: 25px;
   height: 160px;
   width: 128px;
@@ -32,7 +33,7 @@ export const NavItemStyle = styled(NavLink)`
   }
 `;
 export const NavStyle = styled.nav`
-  background-color: #fff;
+  background-color: ${(props) => props.theme.white};
 `;
 export const NavWrapper = styled.div`
   display: flex;
