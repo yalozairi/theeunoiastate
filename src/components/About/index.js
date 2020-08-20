@@ -9,9 +9,11 @@ import {
   LeftVisionWrapper,
   RightVisionWrapper,
   ChartStyled,
+  GoalsWrapper,
 } from "./styles";
 import beach from "../../assets/dominik-schroder-ivieBAESVWM-unsplash.png";
 import chart from "../../assets/Chart.png";
+import VisionList from "./VisionList";
 
 const About = () => {
   return (
@@ -19,12 +21,12 @@ const About = () => {
       <Helmet>
         <title>About | The Eunoia State</title>
       </Helmet>
-      <TitleWrapper>
+      <TitleWrapper className="container">
         <p className="Title">GET TO KNOW US</p>
         <p className="Body">
           Eunoia came to be in 2020 as a daily reminder to focus on what gives
-          us a fulfilled life. <br /> It is a way of proactive living while
-          creating change in the world.
+          us a fulfilled life. It is a way of proactive living while creating
+          change in the world.
         </p>
         <p className="Quote">
           Happiness is not something you find. Happiness is a by-product of a
@@ -39,38 +41,28 @@ const About = () => {
       </BeachWrapper>
       <VisionWrapper id="more" className="container-fluid">
         <div className="row">
-          <LeftVisionWrapper className="col-6 col-sm-12">
+          <LeftVisionWrapper className="col-m-6">
             <ChartStyled src={chart} alt="Chart"></ChartStyled>
           </LeftVisionWrapper>
-          <RightVisionWrapper className="col-6 col-sm-12">
-            <p className="Title">OUR VISION</p>
-            <p className="Body">
-              Our vision is to empower communities through <br />
-              embarking on individual self-discovery journeys that we <br />
-              believe collectively have the power to change the world.
-            </p>
-            <p className="Steps">
-              There are three steps that come with this:
-              <ol>
-                <li>
-                  Develop yourself: Our products work to help you achieve your
-                  <br />
-                  ideal lifestyle, ultimately maintaining happiness.
-                </li>
-                <li>
-                  Help your community: We want you to build a community that
-                  <br />
-                  you are comfortable in, thus promoting positivity.
-                </li>
-                <li>
-                  Change the world: Donations are made with every purchase,
-                  <br />
-                  giving you the opportunity to make a difference.
-                </li>
-              </ol>
-            </p>
+          <RightVisionWrapper className="col-m-6">
+            <VisionList />
           </RightVisionWrapper>
         </div>
+        <GoalsWrapper className="row">
+          <p className="Title">Our Goals</p>
+          <p className="Body">
+            At The Eunoia State, we want to build a family. We hope to achieve
+            three main purposes to ensure that our customers are always
+            satisfied and creating their own unique lifestyle.
+          </p>
+          <p className="Steps">
+            <ol>
+              <li>Promote individual growth and encourage self-awareness</li>
+              <li>Create a welcoming community that is a safe place for all</li>
+              <li>Donate and provide hands-on-aid to people in need</li>
+            </ol>
+          </p>
+        </GoalsWrapper>
       </VisionWrapper>
     </div>
   );

@@ -83,20 +83,51 @@ export const VisionWrapper = styled.div`
   height: 660px;
   width: 100%;
   background-color: ${(props) => props.theme.white};
+  align-items: center;
+  justify-content: center;
 `;
 
 export const ChartStyled = styled.img`
   width: auto;
-  height: 500px;
+  height: 300px;
+  margin-left: auto;
 `;
 
 export const LeftVisionWrapper = styled.div`
-  width: 50%;
+  margin: 15px;
 `;
 
 export const RightVisionWrapper = styled.div`
-  width: 50%;
+  margin: 15px;
 
+  p {
+    text-align: left;
+    font-family: lato;
+    color: ${(props) => props.theme.darkBlue};
+
+    &.Title {
+      text-transform: uppercase;
+      font-size: 40px;
+      font-weight: 300;
+    }
+    &.Body {
+      font-size: 18px;
+      line-height: 2;
+    }
+    &.Steps {
+      font-size: 15px;
+      font-weight: 100px;
+      margin-top: 20px;
+      line-height: 2;
+    }
+  }
+`;
+
+export const GoalsWrapper = styled.div`
+  margin: 15px;
+  height: 1000px;
+  width: 100%;
+  background-color: ${(props) => props.theme.white};
   p {
     text-align: left;
     font-family: lato;
