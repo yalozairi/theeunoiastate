@@ -19,11 +19,29 @@ export const TitleWrapper = styled.div`
       font-size: 72px;
       font-family: lato;
       font-weight: 300;
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      animation: fadeIn 2s forwards;
     }
     &.Body {
       color: ${(props) => props.theme.darkBlue};
       font-size: 20px;
       font-family: lato;
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      animation: fadeIn 3s forwards;
     }
     &.Quote {
       color: ${(props) => props.theme.darkBlue};
@@ -31,6 +49,15 @@ export const TitleWrapper = styled.div`
       font-family: lato;
       font-weight: 100px;
       margin-top: 20px;
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      animation: fadeIn 4s forwards;
     }
   }
 `;
@@ -42,6 +69,15 @@ export const MoreButtonStyled = styled.div`
   :hover {
     color: ${(props) => props.theme.white};
   }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn 4s forwards;
   a {
     color: ${(props) => props.theme.darkBlue};
     background-color: ${(props) => props.theme.white};
@@ -64,23 +100,14 @@ export const BeachWrapper = styled.div`
 `;
 
 export const Beach = styled.img`
-  width: 100%;
+  width: 100vw;
   max-height: 640px;
   object-fit: cover;
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn 2s forwards;
-  /* TODO: ON SCROLL */
+  object-position: 50% 100%;
 `;
 
 export const VisionWrapper = styled.div`
-  height: 660px;
+  /* height: 660px; */
   width: 100%;
   background-color: ${(props) => props.theme.white};
   align-items: center;
@@ -88,17 +115,26 @@ export const VisionWrapper = styled.div`
 `;
 
 export const ChartStyled = styled.img`
-  width: auto;
-  height: 300px;
-  margin-left: auto;
+  width: 25vw;
+  min-width: 480px;
+  height: auto;
+  object-fit: contain;
 `;
 
 export const LeftVisionWrapper = styled.div`
-  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
 `;
 
 export const RightVisionWrapper = styled.div`
-  margin: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
 
   p {
     text-align: left;
@@ -124,8 +160,7 @@ export const RightVisionWrapper = styled.div`
 `;
 
 export const GoalsWrapper = styled.div`
-  margin: 15px;
-  height: 1000px;
+  margin-top: 120px; /* height: 1000px; */
   width: 100%;
   background-color: ${(props) => props.theme.white};
   p {
