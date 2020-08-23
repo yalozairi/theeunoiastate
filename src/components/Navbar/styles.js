@@ -32,6 +32,7 @@ export const NavItemStyle = styled(NavLink)`
     color: ${(props) => props.theme.lightBlue};
   }
 `;
+
 export const NavStyle = styled.nav`
   background-color: ${(props) => props.theme.white};
 `;
