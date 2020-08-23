@@ -97,6 +97,7 @@ export const MoreButtonStyled = styled.div`
 export const BeachWrapper = styled.div`
   max-height: 640px;
   width: 100%;
+  margin-bottom: 130px;
 `;
 
 export const Beach = styled.img`
@@ -124,7 +125,7 @@ export const ChartStyled = styled.img`
 export const LeftVisionWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
-  margin-top: 130px;
+  margin-bottom: 60px;
 `;
 
 export const RightVisionWrapper = styled.div`
@@ -134,7 +135,7 @@ export const RightVisionWrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 60px;
 
   p {
     text-align: left;
@@ -160,7 +161,7 @@ export const RightVisionWrapper = styled.div`
 `;
 
 export const GoalsWrapper = styled.div`
-  margin-top: 120px; /* height: 1000px; */
+  margin-top: 60px; /* height: 1000px; */
   width: 100%;
   background-color: ${(props) => props.theme.white};
   p {
