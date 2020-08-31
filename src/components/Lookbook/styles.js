@@ -1,7 +1,7 @@
 import styled from "styled-components";
 //TODO SHRINK DEAD SPACE ON SMALLER DEVICES
 export const ComingSoonWrapper = styled.div`
-  height: 260px;
+  max-height: 260px;
   width: 100%;
   background-color: ${(props) => props.theme.white};
   text-align: center;
@@ -16,6 +16,24 @@ export const ComingSoonWrapper = styled.div`
     }
   }
   animation: fadeIn 3s forwards;
+
+  @media screen and (max-width: 768px) {
+    height: 100px;
+    width: 100%;
+    background-color: ${(props) => props.theme.white};
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    animation: fadeIn 3s forwards;
+  }
 `;
 
 export const ComingSoon = styled.h1`
@@ -29,16 +47,22 @@ export const ComingSoon = styled.h1`
 `;
 
 export const ImageWrapper = styled.div`
-  height: 760px;
   width: 100%;
+  max-height: 760px;
   background-color: ${(props) => props.theme.white};
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 768px) {
+    height: 350px;
+    width: 100%;
+    background-color: ${(props) => props.theme.white};
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const People = styled.img`
   max-width: 100%;
-  height: auto;
   object-fit: contain;
   @keyframes fadeIn {
     0% {

@@ -47,7 +47,9 @@ export const WelcomeButton = styled.div`
   :hover {
     color: ${(props) => props.theme.white};
   }
-
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+  }
   a {
     color: ${(props) => props.theme.darkBlue};
     border: 1px solid ${(props) => props.theme.darkBlue};
