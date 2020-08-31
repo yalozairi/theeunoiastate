@@ -34,6 +34,7 @@ export const InstagramStyled = styled(AiOutlineInstagram)`
     color: ${(props) => props.theme.darkBlue};
   }
   @media screen and (max-width: 768px) {
+    margin-top: 15px;
     color: ${(props) => props.theme.black};
     font-size: 2.25rem;
     :hover {
