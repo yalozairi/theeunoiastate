@@ -98,7 +98,7 @@ export const TitleWrapper = styled.div`
         font-size: 1.4vw;
         font-family: lato;
         font-weight: 100px;
-        margin-top: 20px;
+        margin-top: 0px;
         @keyframes fadeIn {
           0% {
             opacity: 0;
@@ -121,7 +121,7 @@ export const MoreButtonStyled = styled.div`
     color: ${(props) => props.theme.white};
   }
   @media screen and (max-width: 768px) {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   @keyframes fadeIn {
     0% {

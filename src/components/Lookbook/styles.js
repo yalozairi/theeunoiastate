@@ -72,5 +72,5 @@ export const People = styled.img`
       opacity: 1;
     }
   }
-  animation: fadeIn 2s forwards;
+  animation: fadeIn 5s forwards;
 `;
