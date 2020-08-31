@@ -23,6 +23,14 @@ export const InstagramStyled = styled(AiOutlineInstagram)`
     transition: ease 0.3s;
     color: ${(props) => props.theme.darkBlue};
   }
+  @media screen and (max-width: 768px) {
+    color: ${(props) => props.theme.black};
+    font-size: 2rem;
+    :hover {
+      transition: ease 0.3s;
+      color: ${(props) => props.theme.darkBlue};
+    }
+  }
 `;
 
 export const CopyrightStyled = styled.h5`
