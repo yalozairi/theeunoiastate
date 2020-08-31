@@ -10,7 +10,6 @@ import {
   //TODO NICE LOADING DefaultWelcomeDiv,
   InstaDiv,
 } from "./styles";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -23,7 +22,14 @@ const Home = () => {
         <TextAndButton>
           <WelcomeText>WELCOME TO EUNOIA</WelcomeText>
           <WelcomeButton>
-            <Link smooth={true}>Explore</Link>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/theeunoiastate/"
+              rel="noopener noreferrer"
+              smooth={true}
+            >
+              Explore
+            </a>
           </WelcomeButton>
         </TextAndButton>
       </WelcomeDiv>
