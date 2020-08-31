@@ -25,6 +25,9 @@ export const BeachPicDiv = styled.div`
 export const TextAndButton = styled.div`
   position: absolute;
   width: 100vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
   top: 50%;
   left: 50%;
@@ -59,7 +62,6 @@ export const WelcomeText = styled.p`
 
 export const WelcomeButton = styled.div`
   margin-top: 70px;
-
   :hover {
     color: ${(props) => props.theme.white};
   }

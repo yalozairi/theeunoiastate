@@ -41,6 +41,7 @@ export const NavItemStyle = styled(NavLink)`
 
 export const NavStyle = styled.nav`
   background-color: ${(props) => props.theme.white};
+  z-index: 3;
 `;
 export const NavWrapper = styled.div`
   display: flex;
