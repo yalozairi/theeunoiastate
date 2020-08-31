@@ -7,10 +7,6 @@ export const WelcomeDiv = styled.div`
   text-align: center;
 `;
 
-// export const DefaultWelcomeDiv = styled.div`
-//   height: 680px;
-// `;
-
 export const BeachPic = styled.img`
   width: 100%;
   max-height: 680px;
@@ -18,7 +14,6 @@ export const BeachPic = styled.img`
 `;
 
 export const BeachPicDiv = styled.div`
-  /* position: absolute; */
   z-index: 1;
 `;
 
