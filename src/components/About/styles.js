@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const TitleWrapper = styled.div`
-  height: 600px;
+  height: auto;
+  min-height: 400px;
   width: 100%;
   background-color: ${(props) => props.theme.white};
   display: flex;
@@ -149,8 +150,8 @@ export const MoreButtonStyled = styled.div`
       background-color: ${(props) => props.theme.white};
       border: 1px solid ${(props) => props.theme.darkBlue};
       border-radius: 100px;
-      font-size: 11px;
-      padding: 9px 11.4px;
+      font-size: 10px;
+      padding: 7px 10.8px;
       :hover {
         text-decoration: none;
         color: ${(props) => props.theme.white};
@@ -184,9 +185,11 @@ export const VisionWrapper = styled.div`
 `;
 
 export const ChartStyled = styled.img`
-  width: 25vw;
+  /* width: 25vw;
   min-width: 480px;
-  height: auto;
+  height: auto; */
+  height: 100px;
+  width: 100px;
   object-fit: contain;
 `;
 
