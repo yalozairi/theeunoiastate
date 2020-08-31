@@ -48,6 +48,9 @@ export const TitleWrapper = styled.div`
         }
         animation: fadeIn 2s forwards;
       }
+      @media screen and (max-width: 350px) {
+        font-size: 11px;
+      }
     }
     &.Body {
       color: ${(props) => props.theme.darkBlue};
@@ -78,7 +81,7 @@ export const TitleWrapper = styled.div`
         animation: fadeIn 3s forwards;
       }
       @media screen and (max-width: 350px) {
-        font-size: 8px;
+        font-size: 7px;
       }
     }
     &.Quote {
@@ -113,7 +116,7 @@ export const TitleWrapper = styled.div`
         animation: fadeIn 4s forwards;
       }
       @media screen and (max-width: 350px) {
-        font-size: 6px;
+        font-size: 6.5px;
       }
     }
   }
