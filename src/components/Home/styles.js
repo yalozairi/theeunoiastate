@@ -31,17 +31,19 @@ export const TextAndButton = styled.div`
       opacity: 1;
     }
   }
+  animation: fadeIn 3s forwards;
   height: 100%;
   position: absolute;
   width: 100vw;
   text-align: center;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   z-index: 2;
-  top: 75%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: fadeIn 3s forwards;
 `;
 
 export const WelcomeText = styled.p`
