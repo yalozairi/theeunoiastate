@@ -11,7 +11,7 @@ export const FooterWrapperWrapper = styled.div`
   position: absolute;
   @media screen and (max-width: 768px) {
     height: 120px;
-    padding-bottom: 150px;
+    padding-bottom: 15px;
     z-index: 3;
     width: 100%;
     background-color: ${(props) => props.theme.white};
