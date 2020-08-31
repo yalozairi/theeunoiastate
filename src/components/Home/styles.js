@@ -31,7 +31,6 @@ export const TextAndButton = styled.div`
       opacity: 1;
     }
   }
-  animation-delay: 5s;
   position: absolute;
   width: 100vw;
   text-align: center;

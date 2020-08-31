@@ -2,17 +2,27 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const NavBarLogo = styled.img`
+  max-height: 160px;
+  max-width: 128px;
+
+  @media screen and (max-width: 768px) {
+    max-height: 160px;
+    max-width: 128px;
+  }
+`;
+
+export const NavBarLogoDiv = styled.div`
   margin-top: 65px;
   margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
   height: 160px;
   width: 128px;
-  object-fit: cover;
   @media screen and (max-width: 768px) {
     margin-top: 10px;
     margin-bottom: 25px;
     height: 160px;
     width: 128px;
-    object-fit: cover;
   }
 `;
 
@@ -48,4 +58,5 @@ export const NavWrapper = styled.div`
   flex-direction: column;
   margin: auto;
   text-align: center;
+  position: relative;
 `;
