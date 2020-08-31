@@ -116,7 +116,7 @@ export const TitleWrapper = styled.div`
         animation: fadeIn 4s forwards;
       }
       @media screen and (max-width: 350px) {
-        font-size: 7px;
+        font-size: 6.9px;
       }
     }
   }
