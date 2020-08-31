@@ -7,7 +7,7 @@ import {
   WelcomeText,
   TextAndButton,
   WelcomeButton,
-  //TODO NICE LOADING DefaultWelcomeDiv,
+  BeachPicDiv,
   InstaDiv,
 } from "./styles";
 
@@ -18,7 +18,9 @@ const Home = () => {
         <title>Home | The Eunoia State</title>
       </Helmet>
       <WelcomeDiv>
-        <BeachPic src={sea} alt="Sea" />
+        <BeachPicDiv>
+          <BeachPic src={sea} alt="Sea" />
+        </BeachPicDiv>
         <TextAndButton>
           <WelcomeText>WELCOME TO EUNOIA</WelcomeText>
           <WelcomeButton>

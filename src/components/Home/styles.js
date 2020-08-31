@@ -17,8 +17,15 @@ export const BeachPic = styled.img`
   object-fit: cover;
 `;
 
+export const BeachPicDiv = styled.div`
+  /* position: absolute; */
+  z-index: 1;
+`;
+
 export const TextAndButton = styled.div`
   position: absolute;
+  width: 100vw;
+  z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -35,10 +42,19 @@ export const TextAndButton = styled.div`
 
 export const WelcomeText = styled.p`
   text-transform: uppercase;
-  font-size: 4.7vw;
+  font-size: 5.5vw;
   font-weight: 300;
   font-family: lato;
   color: ${(props) => props.theme.darkBlue};
+  /* @media screen and (max-width: 768px) {
+    text-transform: uppercase;
+    font-size: 500px;
+    font-weight: 300;
+    font-family: lato;
+    color: ${(
+    props
+  ) => props.theme.darkBlue};
+  } */
 `;
 
 export const WelcomeButton = styled.div`
