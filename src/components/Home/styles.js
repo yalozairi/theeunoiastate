@@ -62,11 +62,14 @@ export const WelcomeText = styled.p`
 
 export const WelcomeButton = styled.div`
   margin-top: 70px;
+  z-index: 2;
+
   :hover {
     color: ${(props) => props.theme.white};
   }
   @media screen and (max-width: 768px) {
     margin-top: 50px;
+    z-index: 2;
   }
   a {
     color: ${(props) => props.theme.darkBlue};
