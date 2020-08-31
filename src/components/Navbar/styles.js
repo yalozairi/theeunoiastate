@@ -2,12 +2,18 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const NavBarLogo = styled.img`
-  /* margin-top: 20px; */
   margin-top: 65px;
   margin-bottom: 25px;
   height: 160px;
   width: 128px;
   object-fit: cover;
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    height: 160px;
+    width: 128px;
+    object-fit: cover;
+  }
 `;
 
 export const NavItemStyle = styled(NavLink)`
