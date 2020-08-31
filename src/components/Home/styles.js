@@ -23,6 +23,15 @@ export const BeachPicDiv = styled.div`
 `;
 
 export const TextAndButton = styled.div`
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  animation-delay: 5s;
   position: absolute;
   width: 100vw;
   text-align: center;
@@ -32,14 +41,6 @@ export const TextAndButton = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
   animation: fadeIn 3s forwards;
 `;
 
@@ -72,6 +73,7 @@ export const WelcomeButton = styled.div`
     z-index: 2;
   }
   a {
+    z-index: 2;
     color: ${(props) => props.theme.darkBlue};
     border: 1px solid ${(props) => props.theme.darkBlue};
     border-radius: 100px;
@@ -84,6 +86,7 @@ export const WelcomeButton = styled.div`
       cursor: pointer;
     }
     @media screen and (max-width: 768px) {
+      z-index: 2;
       font-size: 10px;
       padding: 8px 11.4px;
       color: ${(props) => props.theme.darkBlue};
