@@ -22,7 +22,7 @@ export const TextAndButton = styled.div`
 
 export const WelcomeText = styled.p`
   text-transform: uppercase;
-  font-size: 72px;
+  font-size: 4.7vw;
   font-weight: 300;
   font-family: lato;
   color: ${(props) => props.theme.darkBlue};
@@ -58,4 +58,6 @@ export const WelcomeButton = styled.div`
   }
 `;
 
-export const InstaDiv = styled.div``;
+export const InstaDiv = styled.div`
+  align-items: center;
+`;

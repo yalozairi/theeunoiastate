@@ -11,8 +11,8 @@ import {
   ChartStyled,
   GoalsWrapper,
 } from "./styles";
-import beach from "../../assets/dominik-schroder-ivieBAESVWM-unsplash.png";
-import chart from "../../assets/Chart.png";
+import beach from "../../assets/compressed/dominik-schroder-ivieBAESVWM-unsplash.jpg";
+import chart from "../../assets/compressed/Chart.jpg";
 import VisionList from "./VisionList";
 import Aos from "aos";
 import "aos/dist/aos.css";

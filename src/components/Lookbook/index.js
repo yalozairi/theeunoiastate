@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { ComingSoonWrapper, ComingSoon, ImageWrapper, People } from "./styles";
-import people from "../../assets/0.png";
+import people from "../../assets/compressed/0.jpg";
 
 const Lookbook = () => {
   return (
