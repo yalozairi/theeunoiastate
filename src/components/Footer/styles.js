@@ -7,6 +7,14 @@ export const FooterWrapperWrapper = styled.div`
   background-color: ${(props) => props.theme.white};
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    height: 120px;
+    width: 100%;
+    background-color: ${(props) => props.theme.white};
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const FooterWrapper = styled.div`
