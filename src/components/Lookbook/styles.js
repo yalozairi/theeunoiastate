@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ComingSoonWrapper = styled.div`
   max-height: 260px;
   width: 100%;
+  margin-top: 20px;
   background-color: ${(props) => props.theme.white};
   text-align: center;
   display: flex;
