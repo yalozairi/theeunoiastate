@@ -5,7 +5,7 @@ export const FooterWrapperWrapper = styled.div`
   height: 180px;
   width: 100%;
   z-index: 3;
-  background-color: ${(props) => props.theme.white};
+  background-color: ${(props) => props.theme.yellow};
   display: flex;
   justify-content: center;
 
@@ -13,7 +13,7 @@ export const FooterWrapperWrapper = styled.div`
     height: 120px;
     z-index: 3;
     width: 100%;
-    background-color: ${(props) => props.theme.white};
+    background-color: ${(props) => props.theme.yellow};
     display: flex;
     justify-content: center;
   }
