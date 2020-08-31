@@ -4,14 +4,14 @@ import { AiOutlineInstagram } from "react-icons/ai";
 export const FooterWrapperWrapper = styled.div`
   height: 180px;
   width: 100%;
-  z-index: 4;
+  z-index: 3;
   background-color: ${(props) => props.theme.white};
   display: flex;
   justify-content: center;
 
   @media screen and (max-width: 768px) {
     height: 120px;
-    z-index: 4;
+    z-index: 3;
     width: 100%;
     background-color: ${(props) => props.theme.white};
     display: flex;
