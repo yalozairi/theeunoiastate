@@ -16,7 +16,8 @@ export const TitleWrapper = styled.div`
     &.Title {
       color: ${(props) => props.theme.darkBlue};
       text-transform: uppercase;
-      font-size: 72px;
+      /* font-size: 72px; */
+      font-size: 5.5vw;
       font-family: lato;
       font-weight: 300;
       @keyframes fadeIn {
@@ -28,10 +29,28 @@ export const TitleWrapper = styled.div`
         }
       }
       animation: fadeIn 2s forwards;
+
+      @media screen and (max-width: 768px) {
+        color: ${(props) => props.theme.darkBlue};
+        text-transform: uppercase;
+        /* font-size: 72px; */
+        font-size: 7vw;
+        font-family: lato;
+        font-weight: 300;
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        animation: fadeIn 2s forwards;
+      }
     }
     &.Body {
       color: ${(props) => props.theme.darkBlue};
-      font-size: 20px;
+      font-size: 1.5vw;
       font-family: lato;
       @keyframes fadeIn {
         0% {
@@ -42,10 +61,25 @@ export const TitleWrapper = styled.div`
         }
       }
       animation: fadeIn 3s forwards;
+
+      @media screen and (max-width: 768px) {
+        color: ${(props) => props.theme.darkBlue};
+        font-size: 1.8vw;
+        font-family: lato;
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        animation: fadeIn 3s forwards;
+      }
     }
     &.Quote {
       color: ${(props) => props.theme.darkBlue};
-      font-size: 15px;
+      font-size: 1.1vw;
       font-family: lato;
       font-weight: 100px;
       margin-top: 20px;
@@ -58,6 +92,22 @@ export const TitleWrapper = styled.div`
         }
       }
       animation: fadeIn 4s forwards;
+      @media screen and (max-width: 768px) {
+        color: ${(props) => props.theme.darkBlue};
+        font-size: 1.4vw;
+        font-family: lato;
+        font-weight: 100px;
+        margin-top: 20px;
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        animation: fadeIn 4s forwards;
+      }
     }
   }
 `;
@@ -68,6 +118,9 @@ export const MoreButtonStyled = styled.div`
 
   :hover {
     color: ${(props) => props.theme.white};
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
   }
   @keyframes fadeIn {
     0% {
@@ -90,6 +143,21 @@ export const MoreButtonStyled = styled.div`
       background-color: ${(props) => props.theme.darkBlue};
       transition: ease 0.4s;
       cursor: pointer;
+    }
+    @media screen and (max-width: 768px) {
+      color: ${(props) => props.theme.darkBlue};
+      background-color: ${(props) => props.theme.white};
+      border: 1px solid ${(props) => props.theme.darkBlue};
+      border-radius: 100px;
+      font-size: 11px;
+      padding: 9px 11.4px;
+      :hover {
+        text-decoration: none;
+        color: ${(props) => props.theme.white};
+        background-color: ${(props) => props.theme.darkBlue};
+        transition: ease 0.4s;
+        cursor: pointer;
+      }
     }
   }
 `;

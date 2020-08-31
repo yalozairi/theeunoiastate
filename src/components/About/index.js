@@ -17,7 +17,7 @@ import VisionList from "./VisionList";
 import Aos from "aos";
 import "aos/dist/aos.css";
 //TODO: LONGER FADE ANIMATIONS
-//TODO: ASK IF ANIMATIONS STAY OR GO
+//TODO: ASK IF ANIMATIONS COME BACK OR GO
 import { Link } from "react-scroll";
 
 const About = () => {
