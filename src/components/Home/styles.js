@@ -49,15 +49,6 @@ export const WelcomeText = styled.p`
   font-weight: 300;
   font-family: lato;
   color: ${(props) => props.theme.darkBlue};
-  /* @media screen and (max-width: 768px) {
-    text-transform: uppercase;
-    font-size: 500px;
-    font-weight: 300;
-    font-family: lato;
-    color: ${(
-    props
-  ) => props.theme.darkBlue};
-  } */
 `;
 
 export const WelcomeButton = styled.div`
