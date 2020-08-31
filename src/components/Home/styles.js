@@ -7,6 +7,10 @@ export const WelcomeDiv = styled.div`
   text-align: center;
 `;
 
+// export const DefaultWelcomeDiv = styled.div`
+//   height: 680px;
+// `;
+
 export const BeachPic = styled.img`
   width: 100%;
   max-height: 680px;
@@ -18,6 +22,15 @@ export const TextAndButton = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn 3s forwards;
 `;
 
 export const WelcomeText = styled.p`
@@ -34,15 +47,7 @@ export const WelcomeButton = styled.div`
   :hover {
     color: ${(props) => props.theme.white};
   }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn 1s forwards;
+
   a {
     color: ${(props) => props.theme.darkBlue};
     border: 1px solid ${(props) => props.theme.darkBlue};
@@ -54,6 +59,20 @@ export const WelcomeButton = styled.div`
       background-color: ${(props) => props.theme.darkBlue};
       transition: ease 0.4s;
       cursor: pointer;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 10px;
+      padding: 8px 11.4px;
+      color: ${(props) => props.theme.darkBlue};
+      border: 1px solid ${(props) => props.theme.darkBlue};
+      border-radius: 100px;
+      :hover {
+        text-decoration: none;
+        color: ${(props) => props.theme.white};
+        background-color: ${(props) => props.theme.darkBlue};
+        transition: ease 0.4s;
+        cursor: pointer;
+      }
     }
   }
 `;

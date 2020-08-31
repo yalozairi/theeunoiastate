@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+//TODO SHRINK DEAD SPACE ON SMALLER DEVICES
 export const ComingSoonWrapper = styled.div`
   height: 260px;
   width: 100%;

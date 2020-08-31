@@ -7,6 +7,7 @@ import {
   WelcomeText,
   TextAndButton,
   WelcomeButton,
+  //TODO NICE LOADING DefaultWelcomeDiv,
   InstaDiv,
 } from "./styles";
 import { Link } from "react-router-dom";
