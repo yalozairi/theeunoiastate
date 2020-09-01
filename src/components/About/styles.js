@@ -48,7 +48,7 @@ export const TitleWrapper = styled.div`
         }
         animation: fadeIn 2s forwards;
       }
-      @media screen and (max-width: 350px) {
+      @media screen and (max-width: 640px) {
         font-size: 20px;
       }
     }
@@ -80,7 +80,7 @@ export const TitleWrapper = styled.div`
         }
         animation: fadeIn 3s forwards;
       }
-      @media screen and (max-width: 350px) {
+      @media screen and (max-width: 640px) {
         font-size: 7px;
       }
     }
@@ -115,7 +115,7 @@ export const TitleWrapper = styled.div`
         }
         animation: fadeIn 4s forwards;
       }
-      @media screen and (max-width: 350px) {
+      @media screen and (max-width: 640px) {
         font-size: 6.9px;
       }
     }
