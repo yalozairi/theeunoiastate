@@ -202,10 +202,10 @@ export const VisionWrapper = styled.div`
 `;
 
 export const ChartStyled = styled.img`
-  width: 25vw;
+  width: 24vw;
   min-width: 480px;
   @media screen and (max-width: 550px) {
-    width: 80%;
+    width: 60%;
     min-width: 50px;
     height: auto;
   }
@@ -216,7 +216,8 @@ export const ChartStyled = styled.img`
 export const LeftVisionWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
+  margin-bottom: auto;
+  margin-top: auto;
   justify-content: center;
   display: flex;
 `;
@@ -228,7 +229,7 @@ export const RightVisionWrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: auto;
-  margin-bottom: 60px;
+  margin-bottom: auto;
 
   p {
     text-align: left;
@@ -239,29 +240,51 @@ export const RightVisionWrapper = styled.div`
       text-transform: uppercase;
       font-size: 40px;
       font-weight: 300;
+      margin-bottom: 35px;
       @media screen and (max-width: 768px) {
-        font-size: 4vw;
+        font-size: 7vw;
+        margin-bottom: 10px;
       }
-      &.Body {
-        font-size: 18px;
-        line-height: 2;
+      @media screen and (max-width: 992px) {
+        margin-top: 40px;
       }
-      &.Steps {
-        font-size: 15px;
-        font-weight: 100px;
-        margin-top: 20px;
-        line-height: 2;
+      @media screen and (max-width: 350px) {
+        font-size: 20px;
       }
     }
+    &.Body {
+      font-size: 18px;
+      line-height: 2;
+      @media screen and (max-width: 768px) {
+        font-size: 2.5vw;
+      }
+      @media screen and (max-width: 350px) {
+        font-size: 7px;
+      }
+    }
+    &.Steps {
+      font-size: 15px;
+      font-weight: 100px;
+      margin-top: 20px;
+      line-height: 2;
+      @media screen and (max-width: 768px) {
+        font-size: 2vw;
+      }
+      @media screen and (max-width: 350px) {
+        font-size: 6.9px;
+      }
+    }
+  }
+  li {
+    padding-left: 5px;
   }
 `;
 
 export const GoalsWrapper = styled.div`
   @media screen and (max-width: 992px) {
-    margin-top: 0px;
+    margin-top: 30px;
   }
-
-  margin-top: 60px; /* height: 1000px; */
+  margin-top: 60px;
   width: 100%;
   background-color: ${(props) => props.theme.white};
   p {
@@ -274,17 +297,39 @@ export const GoalsWrapper = styled.div`
       font-size: 40px;
       font-weight: 300;
       margin-left: 20px;
+      @media screen and (max-width: 768px) {
+        font-size: 7vw;
+      }
+      @media screen and (max-width: 350px) {
+        font-size: 20px;
+      }
     }
     &.Body {
       font-size: 18px;
       line-height: 2;
       margin-left: 20px;
+      @media screen and (max-width: 768px) {
+        font-size: 2.5vw;
+      }
+      @media screen and (max-width: 350px) {
+        font-size: 7px;
+      }
     }
     &.Steps {
       font-size: 15px;
       font-weight: 100px;
       margin-top: 20px;
       line-height: 2;
+      @media screen and (max-width: 768px) {
+        font-size: 2vw;
+        margin-top: 0px;
+      }
+      @media screen and (max-width: 350px) {
+        font-size: 6.9px;
+      }
     }
+  }
+  li {
+    padding-left: 5px;
   }
 `;
