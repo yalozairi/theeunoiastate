@@ -181,9 +181,9 @@ export const BeachWrapper = styled.div`
   @media screen and (min-width: 350px) {
     margin-top: 30px;
   }
-  @media screen and (max-width: 992px) {
+  /* @media screen and (max-width: 992px) {
     margin-bottom: 60px;
-  }
+  } */
   margin-bottom: 100px;
 `;
 
