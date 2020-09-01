@@ -216,7 +216,8 @@ export const ChartStyled = styled.img`
 export const LeftVisionWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
-  align-self: center;
+  padding-bottom: auto;
+  padding-top: auto;
   justify-content: center;
   display: flex;
 `;
@@ -227,7 +228,9 @@ export const RightVisionWrapper = styled.div`
   display: block;
   align-items: center;
   justify-content: center;
-  align-self: center;
+  padding-top: auto;
+  padding-bottom: auto;
+
   p {
     text-align: left;
     font-family: lato;
