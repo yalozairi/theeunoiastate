@@ -8,7 +8,7 @@ import {
 } from "./styles";
 import { Link } from "react-router-dom";
 import logo from "../../logo.png";
-
+//TODO: SMOOTH SCROLL UP ON CLICK FOR TABS
 const Navbar = () => {
   return (
     <NavStyle className="navbar navbar-expand">
