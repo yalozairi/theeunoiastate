@@ -124,6 +124,7 @@ export const TitleWrapper = styled.div`
 
 export const MoreButtonStyled = styled.div`
   margin-top: 45px;
+  margin-bottom: 30px;
   color: ${(props) => props.theme.darkBlue};
 
   :hover {
