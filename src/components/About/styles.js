@@ -195,7 +195,6 @@ export const Beach = styled.img`
 `;
 
 export const VisionWrapper = styled.div`
-  /* height: 660px; */
   width: 100%;
   background-color: ${(props) => props.theme.white};
   align-items: center;
@@ -240,16 +239,19 @@ export const RightVisionWrapper = styled.div`
       text-transform: uppercase;
       font-size: 40px;
       font-weight: 300;
-    }
-    &.Body {
-      font-size: 18px;
-      line-height: 2;
-    }
-    &.Steps {
-      font-size: 15px;
-      font-weight: 100px;
-      margin-top: 20px;
-      line-height: 2;
+      @media screen and (max-width: 768px) {
+        font-size: 4vw;
+      }
+      &.Body {
+        font-size: 18px;
+        line-height: 2;
+      }
+      &.Steps {
+        font-size: 15px;
+        font-weight: 100px;
+        margin-top: 20px;
+        line-height: 2;
+      }
     }
   }
 `;
