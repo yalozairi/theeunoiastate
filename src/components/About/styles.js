@@ -181,7 +181,10 @@ export const BeachWrapper = styled.div`
   @media screen and (min-width: 350px) {
     margin-top: 30px;
   }
-  margin-bottom: 130px;
+  @media screen and (max-width: 992px) {
+    margin-bottom: 60px;
+  }
+  margin-bottom: 100px;
 `;
 
 export const Beach = styled.img`
@@ -200,11 +203,14 @@ export const VisionWrapper = styled.div`
 `;
 
 export const ChartStyled = styled.img`
-  /* width: 25vw;
+  width: 25vw;
   min-width: 480px;
-  height: auto; */
-  height: 100px;
-  width: 100px;
+  @media screen and (max-width: 550px) {
+    width: 80%;
+    min-width: 50px;
+    height: auto;
+  }
+  height: auto;
   object-fit: contain;
 `;
 
@@ -212,6 +218,8 @@ export const LeftVisionWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
+  justify-content: center;
+  display: flex;
 `;
 
 export const RightVisionWrapper = styled.div`
@@ -247,6 +255,10 @@ export const RightVisionWrapper = styled.div`
 `;
 
 export const GoalsWrapper = styled.div`
+  @media screen and (max-width: 992px) {
+    margin-top: 0px;
+  }
+
   margin-top: 60px; /* height: 1000px; */
   width: 100%;
   background-color: ${(props) => props.theme.white};
@@ -259,10 +271,12 @@ export const GoalsWrapper = styled.div`
       text-transform: uppercase;
       font-size: 40px;
       font-weight: 300;
+      margin-left: 20px;
     }
     &.Body {
       font-size: 18px;
       line-height: 2;
+      margin-left: 20px;
     }
     &.Steps {
       font-size: 15px;
