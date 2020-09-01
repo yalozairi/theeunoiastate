@@ -214,6 +214,8 @@ export const ChartStyled = styled.img`
 
 export const LeftVisionWrapper = styled.div`
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const RightVisionWrapper = styled.div`
