@@ -207,9 +207,7 @@ export const ChartStyled = styled.img`
   @media screen and (max-width: 550px) {
     width: 60%;
     min-width: 50px;
-    height: auto;
   }
-  height: auto;
   object-fit: contain;
 `;
 
