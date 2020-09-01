@@ -35,7 +35,7 @@ export const TitleWrapper = styled.div`
         color: ${(props) => props.theme.darkBlue};
         text-transform: uppercase;
         /* font-size: 72px; */
-        font-size: 7vw;
+        font-size: 8vw;
         font-family: lato;
         font-weight: 300;
         @keyframes fadeIn {
@@ -68,7 +68,7 @@ export const TitleWrapper = styled.div`
 
       @media screen and (max-width: 768px) {
         color: ${(props) => props.theme.darkBlue};
-        font-size: 1.8vw;
+        font-size: 3vw;
         font-family: lato;
         @keyframes fadeIn {
           0% {
@@ -101,7 +101,7 @@ export const TitleWrapper = styled.div`
       animation: fadeIn 4s forwards;
       @media screen and (max-width: 768px) {
         color: ${(props) => props.theme.darkBlue};
-        font-size: 1.4vw;
+        font-size: 2.5vw;
         font-family: lato;
         font-weight: 100px;
         margin-top: 0px;
@@ -199,6 +199,7 @@ export const VisionWrapper = styled.div`
   background-color: ${(props) => props.theme.white};
   align-items: center;
   justify-content: center;
+  text-align: center;
 `;
 
 export const ChartStyled = styled.img`
@@ -212,11 +213,7 @@ export const ChartStyled = styled.img`
 `;
 
 export const LeftVisionWrapper = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-  padding: auto;
-  justify-content: center;
-  display: flex;
+  display: inline-block;
 `;
 
 export const RightVisionWrapper = styled.div`
