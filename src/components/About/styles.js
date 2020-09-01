@@ -181,9 +181,9 @@ export const BeachWrapper = styled.div`
   @media screen and (min-width: 350px) {
     margin-top: 30px;
   }
-  /* @media screen and (max-width: 992px) {
+  @media screen and (max-width: 992px) {
     margin-bottom: 60px;
-  } */
+  }
   margin-bottom: 100px;
 `;
 
@@ -216,8 +216,7 @@ export const ChartStyled = styled.img`
 export const LeftVisionWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: auto;
-  margin-top: auto;
+  align-self: center;
   justify-content: center;
   display: flex;
 `;
@@ -228,9 +227,7 @@ export const RightVisionWrapper = styled.div`
   display: block;
   align-items: center;
   justify-content: center;
-  margin-top: auto;
-  margin-bottom: auto;
-
+  align-self: center;
   p {
     text-align: left;
     font-family: lato;
