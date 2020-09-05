@@ -32,12 +32,23 @@ const About = () => {
       </Helmet>
       <TitleWrapper className="container">
         <p className="Title">GET TO KNOW US</p>
-        <p className="Body">
-          Eunoia came to be in 2020 as a daily reminder to focus on what gives
-          us a fulfilled life.
-          <br />
-          It is a way of proactive living while creating change in the world.
-        </p>
+        <div data-aos="fade">
+          <p className="Body">
+            Eunoia came to be in 2020 as a daily reminder to focus on what gives
+            us a fulfilled life.
+            <br />
+            It is a way of proactive living while creating change in the world.
+          </p>
+          <p className="BodySmall1">
+            Eunoia came to be in 2020 as a daily reminder to
+          </p>
+          <p className="BodySmall2">focus on what gives us a fulfilled life.</p>
+
+          <p className="BodySmall3">
+            It is a way of proactive living while creating change in the world.
+          </p>
+        </div>
+
         <p className="Quote">
           Happiness is not something you find. Happiness is a by-product of a
           great lifestyle.
