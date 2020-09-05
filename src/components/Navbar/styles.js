@@ -6,7 +6,7 @@ export const NavBarLogo = styled.img`
   max-width: 128px;
 
   @media screen and (max-width: 768px) {
-    max-height: 160px;
+    max-height: 75px;
     max-width: 128px;
   }
 `;
@@ -20,8 +20,8 @@ export const NavBarLogoDiv = styled.div`
   width: 128px;
   @media screen and (max-width: 768px) {
     margin-top: 10px;
-    margin-bottom: 25px;
-    height: 160px;
+    margin-bottom: 15px;
+    height: 75px;
     width: 128px;
   }
 `;
@@ -37,6 +37,9 @@ export const NavItemStyle = styled(NavLink)`
   padding-right: 10px;
   padding-left: 10px;
   margin-bottom: 25px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 10px;
+  }
 
   :hover {
     text-decoration: none;
