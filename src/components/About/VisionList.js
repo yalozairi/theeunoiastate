@@ -7,12 +7,12 @@ const VisionList = () => {
       <p data-aos="fade" data-aos-duration="1" className="Title">
         OUR VISION
       </p>
-      <p data-aos="fade" data-aos-delay="600" className="Body">
+      <p data-aos="fade" data-aos-delay="500" className="Body">
         Our vision is to empower communities through <br />
         embarking on individual self-discovery journeys that we <br />
         believe collectively have the power to change the world.
       </p>
-      <p data-aos="fade" data-aos-delay="900" className="Steps">
+      <p data-aos="fade" data-aos-delay="800" className="Steps">
         There are three steps that come with this:
         <ol>
           <li>
@@ -32,15 +32,15 @@ const VisionList = () => {
           </li>
         </ol>
       </p>
-      <p data-aos="fade" data-aos-delay="600" className="BodySmall">
+      <p data-aos="fade" data-aos-delay="500" className="BodySmall">
         Our vision is to empower communities through embarking on individual
         self-discovery journeys that we believe collectively have the power to
         change the world.
       </p>
-      <p data-aos="fade" data-aos-delay="900" className="ListHeader">
+      <p data-aos="fade" data-aos-delay="800" className="ListHeader">
         There are three steps that come with this:
       </p>
-      <p data-aos="fade" data-aos-delay="900" className="StepsSmall">
+      <p data-aos="fade" data-aos-delay="800" className="StepsSmall">
         <ol>
           <li>
             Develop yourself: Our products work to help you achieve your ideal

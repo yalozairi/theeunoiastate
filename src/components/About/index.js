@@ -72,15 +72,15 @@ const About = () => {
           </RightVisionWrapper>
         </div>
         <GoalsWrapper className="row container">
-          <p data-aos="fade" data-aos-delay="1200" className="Title">
+          <p data-aos="fade" data-aos-delay="1100" className="Title">
             Our Goals
           </p>
-          <p data-aos="fade" data-aos-delay="1500" className="Body">
+          <p data-aos="fade" data-aos-delay="1400" className="Body">
             At The Eunoia State, we want to build a family. We hope to achieve
             three main purposes to ensure that our customers are always
             satisfied and creating their own unique lifestyle.
           </p>
-          <p data-aos="fade" data-aos-delay="1800" className="Steps">
+          <p data-aos="fade" data-aos-delay="1700" className="Steps">
             <ol>
               <li>Promote individual growth and encourage self-awareness</li>
               <li>Create a welcoming community that is a safe place for all</li>
