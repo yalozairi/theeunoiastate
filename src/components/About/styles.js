@@ -53,33 +53,58 @@ export const TitleWrapper = styled.div`
       }
     }
     &.Body {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
       color: ${(props) => props.theme.darkBlue};
       font-size: 1.5vw;
       font-family: lato;
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-      animation: fadeIn 3s forwards;
 
       @media screen and (max-width: 768px) {
         color: ${(props) => props.theme.darkBlue};
         font-size: 3vw;
         font-family: lato;
-        @keyframes fadeIn {
-          0% {
-            opacity: 0;
-          }
-          100% {
-            opacity: 1;
-          }
-        }
-        animation: fadeIn 3s forwards;
       }
+
+      @media screen and (max-width: 350px) {
+        font-size: 7px;
+      }
+    }
+    &.BodySmall1 {
+      @media screen and (min-width: 769px) {
+        display: none;
+      }
+      margin-bottom: 0;
+      color: ${(props) => props.theme.darkBlue};
+      font-size: 3vw;
+      font-family: lato;
+
+      @media screen and (max-width: 350px) {
+        font-size: 7px;
+      }
+    }
+    &.BodySmall2 {
+      @media screen and (min-width: 769px) {
+        display: none;
+      }
+      margin-bottom: 10px;
+      color: ${(props) => props.theme.darkBlue};
+      font-size: 3vw;
+      font-family: lato;
+
+      @media screen and (max-width: 350px) {
+        font-size: 7px;
+      }
+    }
+    &.BodySmall3 {
+      @media screen and (min-width: 769px) {
+        display: none;
+      }
+      margin-bottom: 20px;
+      color: ${(props) => props.theme.darkBlue};
+      font-size: 3vw;
+      font-family: lato;
+
       @media screen and (max-width: 350px) {
         font-size: 7px;
       }
@@ -219,13 +244,19 @@ export const LeftVisionWrapper = styled.div`
 `;
 
 export const RightVisionWrapper = styled.div`
-  margin-right: auto;
-  margin-left: auto;
+  @media screen and (max-width: 992px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
   display: block;
   align-items: center;
   justify-content: center;
   padding-top: auto;
   padding-bottom: auto;
+  /* @media screen and (min-width: 992px) { */
+  margin-right: auto;
+  margin-left: auto;
+  /* } */
 
   p {
     text-align: left;
@@ -234,14 +265,16 @@ export const RightVisionWrapper = styled.div`
 
     &.Title {
       text-transform: uppercase;
+      margin-left: 20px;
+
       font-size: 40px;
       font-weight: 300;
       margin-bottom: 35px;
       @media screen and (max-width: 768px) {
         font-size: 7vw;
-        margin-bottom: 10px;
       }
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 991px) {
+        margin-bottom: 10px;
         margin-top: 40px;
       }
       @media screen and (max-width: 350px) {
@@ -250,9 +283,28 @@ export const RightVisionWrapper = styled.div`
     }
     &.Body {
       font-size: 18px;
+
       line-height: 2;
       @media screen and (max-width: 768px) {
         font-size: 2.5vw;
+      }
+      @media screen and (max-width: 350px) {
+        font-size: 7px;
+      }
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
+    }
+    &.BodySmall {
+      font-size: 18px;
+      margin-left: 20px;
+
+      line-height: 2;
+      @media screen and (max-width: 768px) {
+        font-size: 2.5vw;
+      }
+      @media screen and (min-width: 992px) {
+        display: none;
       }
       @media screen and (max-width: 350px) {
         font-size: 7px;
@@ -265,6 +317,45 @@ export const RightVisionWrapper = styled.div`
       line-height: 2;
       @media screen and (max-width: 768px) {
         font-size: 2vw;
+      }
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
+      @media screen and (max-width: 350px) {
+        font-size: 6.9px;
+      }
+    }
+    &.StepsSmall {
+      font-size: 15px;
+      font-weight: 100px;
+      margin-left: 20px;
+      margin-right: 70px;
+      @media screen and (max-width: 350px) {
+        margin-right: 10px;
+      }
+      line-height: 2;
+      @media screen and (max-width: 768px) {
+        font-size: 2vw;
+      }
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
+      @media screen and (max-width: 350px) {
+        font-size: 6.9px;
+      }
+    }
+    &.ListHeader {
+      font-size: 17px;
+      font-weight: 100px;
+      margin-left: 30px;
+      margin-right: 70px;
+      margin-top: 20px;
+      margin-bottom: 0.5rem;
+      @media screen and (max-width: 768px) {
+        font-size: 2vw;
+      }
+      @media screen and (min-width: 992px) {
+        display: none;
       }
       @media screen and (max-width: 350px) {
         font-size: 6.9px;
