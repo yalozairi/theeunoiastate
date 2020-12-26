@@ -11,7 +11,7 @@ import {
   ShopButtonStyled,
   ShopWrapper,
 } from "./styles";
-import people from "../../assets/compressed/0.jpg";
+import people from "../../assets/People.jpg";
 import photo1 from "../../assets/compressed/lookbook/1.jpg";
 import photo2 from "../../assets/compressed/lookbook/2.jpg";
 import photo3 from "../../assets/compressed/lookbook/3.jpg";

@@ -1,5 +1,5 @@
 import React from "react";
-import sea from "../../assets/carolinie-cavalli-Qw3w0oBH63s-unsplash.jpeg";
+import sea from "../../assets/WelcomeMountains.jpg";
 import { Helmet } from "react-helmet";
 import {
   BeachPic,
