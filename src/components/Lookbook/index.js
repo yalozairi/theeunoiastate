@@ -12,15 +12,15 @@ import {
   ShopWrapper,
 } from "./styles";
 import people from "../../assets/People.jpg";
-import photo1 from "../../assets/compressed/lookbook/1.jpg";
-import photo2 from "../../assets/compressed/lookbook/2.jpg";
-import photo3 from "../../assets/compressed/lookbook/3.jpg";
-import photo4 from "../../assets/compressed/lookbook/4.jpg";
-import photo5 from "../../assets/compressed/lookbook/5.jpg";
-import photo6 from "../../assets/compressed/lookbook/6.jpg";
-import photo7 from "../../assets/compressed/lookbook/7.jpg";
-import photo8 from "../../assets/compressed/lookbook/8.jpg";
-import photo9 from "../../assets/compressed/lookbook/9.jpg";
+import photo1 from "../../assets/lookbook/1.jpg";
+import photo2 from "../../assets/lookbook/2.jpg";
+import photo3 from "../../assets/lookbook/3.jpg";
+import photo4 from "../../assets/lookbook/4.jpg";
+import photo5 from "../../assets/lookbook/5.jpg";
+import photo6 from "../../assets/lookbook/6.jpg";
+import photo7 from "../../assets/lookbook/7.jpg";
+import photo8 from "../../assets/lookbook/8.jpg";
+import photo9 from "../../assets/lookbook/9.jpg";
 const Lookbook = () => {
   return (
     <div>
