@@ -37,7 +37,7 @@ export const LookbookWrapper = styled.div`
   }
 `;
 
-export const Colors = styled.text`
+export const Colors = styled.h1`
   color: ${(props) => props.theme.darkBlue};
   font-size: 1.5vw;
   font-family: lato;
@@ -127,6 +127,87 @@ export const NotebookImage = styled.img`
     margin-right: 5px;
     margin-top: 10px;
     margin-bottom: 0px;
+  }
+`;
+export const ShopWrapper = styled.div`
+  margin-top: 5vh;
+  height: auto;
+  width: 100%;
+  background-color: ${(props) => props.theme.white};
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  :hover {
+  }
+  p {
+    color: ${(props) => props.theme.darkBlue};
+    font-size: 1.5vw;
+    font-family: lato;
+
+    @media screen and (max-width: 768px) {
+      color: ${(props) => props.theme.darkBlue};
+      font-size: 3vw;
+      font-family: lato;
+    }
+
+    @media screen and (max-width: 350px) {
+      font-size: 7px;
+    }
+  }
+`;
+
+export const ShopButtonStyled = styled.div`
+  margin-top: 45px;
+  @media screen and (min-width: 350px) {
+    margin-bottom: 30px;
+  }
+  color: ${(props) => props.theme.darkBlue};
+
+  :hover {
+    color: ${(props) => props.theme.white};
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn 4s forwards;
+  a {
+    color: ${(props) => props.theme.darkBlue};
+    background-color: ${(props) => props.theme.white};
+    border: 1px solid ${(props) => props.theme.darkBlue};
+    border-radius: 100px;
+    padding: 12px 15px;
+    :hover {
+      text-decoration: none;
+      color: ${(props) => props.theme.white};
+      background-color: ${(props) => props.theme.darkBlue};
+      transition: ease 0.4s;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 768px) {
+      color: ${(props) => props.theme.darkBlue};
+      background-color: ${(props) => props.theme.white};
+      border: 1px solid ${(props) => props.theme.darkBlue};
+      border-radius: 100px;
+      font-size: 10px;
+      padding: 7px 10.8px;
+      :hover {
+        text-decoration: none;
+        color: ${(props) => props.theme.white};
+        background-color: ${(props) => props.theme.darkBlue};
+        transition: ease 0.4s;
+        cursor: pointer;
+      }
+    }
   }
 `;
 

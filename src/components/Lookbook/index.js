@@ -8,6 +8,8 @@ import {
   Shop,
   ImageWrapper,
   NotebookImage,
+  ShopButtonStyled,
+  ShopWrapper,
 } from "./styles";
 import people from "../../assets/compressed/0.jpg";
 import photo1 from "../../assets/compressed/lookbook/1.jpg";
@@ -46,7 +48,19 @@ const Lookbook = () => {
         <NotebookImage src={photo8} alt="Sky Blue Notebook with palm tree" />
         <NotebookImage src={photo9} alt="Brown Notebook with cup" />
       </ImageWrapper>
-
+      <ShopWrapper>
+        <p>Without Sticker Prompts: 8KD</p>
+        <p>With Sticker Prompts: 10KD</p>
+        <ShopButtonStyled>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/direct/t/340282366841710300949128167878515809522"
+            rel="noopener noreferrer"
+          >
+            Shop Now
+          </a>
+        </ShopButtonStyled>
+      </ShopWrapper>
       <PeopleWrapper>
         <People src={people} alt="People" />
       </PeopleWrapper>
