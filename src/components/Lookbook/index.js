@@ -54,7 +54,7 @@ const Lookbook = () => {
         <ShopButtonStyled>
           <a
             target="_blank"
-            href="https://www.instagram.com/direct/t/340282366841710300949128167878515809522"
+            href="https://www.instagram.com/theeunoiastate/"
             rel="noopener noreferrer"
           >
             Shop Now
