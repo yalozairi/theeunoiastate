@@ -14,7 +14,7 @@ import {
 import people from "../../assets/People.jpg";
 import photo1 from "../../assets/lookbook/1.jpg";
 import photo2 from "../../assets/lookbook/2.jpg";
-import photo3 from "../../assets/fixed:lookbook/3.jpg";
+import photo3 from "../../assets/lookbook/3.jpg";
 import photo4 from "../../assets/lookbook/4.jpg";
 import photo5 from "../../assets/lookbook/5.jpg";
 import photo6 from "../../assets/lookbook/6.jpg";
