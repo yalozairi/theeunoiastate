@@ -1,5 +1,5 @@
 import React from "react";
-import sea from "../../assets/WelcomeMountains.jpg";
+import sea from "../../assets/fixed:lookbook/WelcomeMountains.jpg";
 import { Helmet } from "react-helmet";
 import {
   BeachPic,
